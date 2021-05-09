@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+            crossorigin="anonymous"
+        />
+
+        <title>역주행 관상 테스트 - 브레이브 걸스편!</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ffd42a25cb08056"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">아이돌 관상</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            <h1 class="title">요즘 뜨는 역주행 관상</h1>
+            <h2 class="subtitle">나와 닮은 브레이브걸스 멤버는?</h2>
+        </section>
+        <section class="instagram">
+            <div class="container mt-5 instagram-cover d-flex flex-row-reverse">
+                <img src="img/instagram-copy.jpg" alt="instagram-icon" class="instagram-icon" />
+                <a href="https://www.instagram.com/nomadlabs_cozac/" class="instagram-link"
+                    >By 노마드 코작</a>
+            </div>
+        </section>
+
+        <script
+            class="jsbin"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        ></script>
+        <div class="container file-upload">
+            <div class="image-upload-wrap">
+                <input
+                    class="file-upload-input"
+                    type="file"
+                    onchange="readURL(this);"
+                    accept="image/*"/>
+                <div class="drag-text">
+                    <img src="img/up-arrow-symbol-in-a-circle.svg" class="mt-5 pb-5 pt-4 upload" />
+                    <h3 class="mb-5 pb-5 pt-4 upload-text">
+                        얼굴 사진을 올려놓거나 눌러서 업로드하세요!
+                    </h3>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+                <div id="loading" class="animated bounce">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">...</span>
+                    </div>
+                    <p class="text-center">AI가 당신의 관상을 분석중입니다.</p>
+                </div>
+                <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+            <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_rgp9"></div>
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <div id="webcam-container"></div>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+            (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                    s = d.createElement('script');
+                s.src = 'https://nomadcozac.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript
+            >Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
+        >
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.image-upload-wrap').hide();
+                        $('#loading').show();
+                        $('.file-upload-image').attr('src', e.target.result);
+                        $('.file-upload-content').show();
+                        $('.image-title').html(input.files[0].name);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                    init().then(() => {
+                        console.log('hello');
+                        predict();
+                        $('#loading').hide();
+                    });
+                    // predict();
+                } else {
+                    removeUpload();
+                }
+            }
+
+            function removeUpload() {
+                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                $('.file-upload-content').hide();
+                $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function () {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function () {
+                $('.image-upload-wrap').removeClass('image-dropping');
+            });
+        </script>
+        <script type="text/javascript">
+            // More API functions here:
+            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+            // the link to your model provided by Teachable Machine export panel
+            const URL = 'https://teachablemachine.withgoogle.com/models/yI5ybHfU6/';
+
+            let model, webcam, labelContainer, maxPredictions;
+
+            // Load the image model and setup the webcam
+            async function init() {
+                const modelURL = URL + 'model.json';
+                const metadataURL = URL + 'metadata.json';
+
+                // load the model and metadata
+                // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                // or files from your local hard drive
+                // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                model = await tmImage.load(modelURL, metadataURL);
+                maxPredictions = model.getTotalClasses();
+
+                labelContainer = document.getElementById('label-container');
+                for (let i = 0; i < maxPredictions; i++) {
+                    var element = document.createElement("div")
+                    element.classList.add("d-flex");
+                    labelContainer.appendChild(element);
+                }
+            }
+
+            // run the webcam image through the image model
+            async function predict() {
+                // predict can take in an image, video or canvas html element
+                var image = document.getElementById('face-image');
+                const prediction = await model.predict(image, false);
+                prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+                var result, resultTitle, resultExplain, resultCeleb;
+                switch (prediction[0].className) {
+                    case '꼬북좌':
+                        result = 'ggobuk'
+                        resultTitle = '꼬북좌상';
+                        resultExplain = '당신은 브레이브걸스 유정과 닮은 꼬북좌상입니다. 미간과 그 코끝까지 이어지는 부분이 상당히 발달되어 있습니다. 관상에서 미간을 명궁 혹은 인당이라 부릅니다. 이곳은 부귀와 빈천, 길흉과 선악, 건강과 체질 등을 간파할 수 있는 곳이기 때문에 그 사람의 운명을 볼 수 있다고 합니다. 인당이 넓고 풍부하고 30살부터 꽃길로 접어드시겠네요. <br><br> 그리고 단단한 콧대가 운수대통입니다. 관상에서는 기운을 물로 표현하는데, 인중이 깊고 넓을수록 범람없이 잘 흡수한다고 합니다. 그래서 당신은 기회가 오면 놓치지 않을 것입니다. 하지만, 하정이 급격히 얇아짐으로 말년(60대 이후)을 조심해야 합니다.<br><br>';
+                        resultCeleb = '브레이브걸스 유정';
+                        break;
+                    case '단발좌':
+                        result = 'danbal'
+                        resultTitle = '단발좌상';
+                        resultExplain = '당신은 브레이브걸스 유나와 닮은 단발좌상입니다. 매부리코와 짧은 하관, 위로 올라간 눈꼬리가 매력적입니다. 매부리코는 40대가 되면 그 사람의 능력이 만개합니다. 이 때 앞서 선하게 살아왔는가 악하게 살아왔는가가 매우 중요합니다. 큰 능력을 소유하게 되기 때문에 그 능력을 어떻게 활용되는지가 결정되기 때문입니다. <br><br> 또한 인생의 목표하는 바를 반드시 성취하기 때문에 과정에 있어서 지나온 길이 나중에 크게 영향을 미칠 것입니다. 눈꼬리가 위로 올라간 관상은 그 사람이 수동적보다는 능동적인 사람이라는 것을 뜻합니다. 브레이브걸스가 만약 이번에 해체됐다면 멤버 중에서 가장 빨리 자리를 잡았을 가능성이 높습니다. 하관은 짧기 때문에 말년의 운이 아쉬울 수 있습니다. 살아가면서 쌓은 부로 보다 더 계획적인 노년의 준비가 필요합니다. 한 번쯤 인생의 절정의 시기가 오는 관상이니, 사람들에게 선행을 베풀어 습관화시키면 좋은인생을 사실 수 있습니다.<br><br>';
+                        resultCeleb = '브레이브걸스 유나';
+                        break;
+                    case '메보좌':
+                        result = 'mebojwa'
+                        resultTitle = '메보좌상';
+                        resultExplain = '당신은 브레이브걸스 민영과 닮은 메보좌상입니다. 역삼각형 얼굴형이며 가장 날씬한 몸을 타고났습니다. 살이 찌더라도 이목구비는 날렵하게 유지되는 상입니다. 얼굴형을 가진 사람은 영혼이 맑고 욕심이 없으며 착한 심성을 타고났습니다. 둥근 이마는 여성적이고 부드럽습니다. 표현력이 좋고 정이 많아 원만한 대인관계를 형성할 수 있습니다. <br><br> 또 이마의 잔털은 두뇌를 깊이 사용하는 것에 방해가 됨으로 육체를 활용하는 직업이 적합합니다. 코끝은 도톰한데 이것은 복을 움켜쥘 줄 안다는 것입니다. 굵고 짧게 보단 얇고 긴 사회생활을 할 가능성이 높습니다. 그리고 손에서 책을 놓지 않아야 합니다. 남들보다 습득이 늦을 순 있으나 쌓이는 지식이 정비례하여 인생에 도움이 되는 상입니다.<br><br>';
+                        resultCeleb = '브레이브걸스 민영';
+                        break;
+                    case '왕눈좌':
+                        result = 'wangnun'
+                        resultTitle = '왕눈좌상';
+                        resultExplain = '당신은 브레이브걸스 은지와 닮은 왕눈좌상입니다. 큰 눈과 넓은 콧구멍, 짙은 눈썹을 가졌습니다. 눈이 큰 사람은 감성적입니다. 눈에 보이는 것이 많기 때문에 즉흥적이기도 합니다. 문화 예술 방면에서 성공하는 사람이 꽤 많지만 사기도 잘 당하니 조심해야합니다. 콧구멍이 큰 사람들은 소비 지출이 큽니다. <br><br> 소비를 즐기다 보니 상품을 보는 안목이 좋고 남들에게도 잘 베풀어 오히려 기회로 돌아오는 경우도 있습니다. 큰 눈, 넓은 콧구멍, 짙은 눈썹은 곧 창의적 아이디어, 공격적 투자, 많은 주변 사람을 뜻합니다. 호구와 사업가 둘 중 하나의 기질이 돋보입니다. 본인이 사업 기질이 있으니 파트너의 실력보다는 신뢰를 항상 생각해야 합니다.<br><br>';
+                        resultCeleb = '브레이브걸스 은지';
+                        break;
+                    default:
+                        result = ''
+                        resultTitle = '당신은 음?';
+                        resultExplain = '';
+                        resultCeleb = '';
+                }
+                console.log(resultTitle);
+                var title =
+                    "<div class='" + result + "-bravegirls-title'>" + resultTitle + '</div>';
+                var explain = "<div class='bravegirls-explain pt-2'>" + resultExplain + '</div>';
+                var celeb = "<div class='" + result + "-bravegirls-celeb pt-2 pb-2'>" + resultCeleb + '</div>';
+                $('.result-message').html(title + explain + celeb);
+                var barWidth;
+                for (let i = 0; i < maxPredictions; i++) {
+                    if (prediction[i].probability.toFixed(2) > 0.1) {
+                        barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+                    } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                        barWidth = '4%';
+                    } else {
+                        barWidth = '2%';
+                    }
+                    var resultlabel, labelTitle;
+                    switch (prediction[i].className) {
+                        case '꼬북좌':
+                            resultlabel = 'ggobuk'
+                            labelTitle = '꼬북좌상';
+                            break;
+                        case '단발좌':
+                            resultlabel = 'danbal'
+                            labelTitle = '단발좌상';
+                            break;
+                        case '메보좌':
+                            resultlabel = 'mebojwa'
+                            labelTitle = '메보좌상';
+                            break;
+                        case '왕눈좌':
+                            resultlabel = 'wangnun'
+                            labelTitle = '왕눈좌상';
+                            break;
+                        default:
+                            labelTitle = '당신은 음?';
+                    }
+                    var label = "<div class='bravegirls-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + resultlabel + "-box'></div><div class='d-flex justify-content-center align-items-center " + resultlabel + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                    labelContainer.childNodes[i].innerHTML = label + bar;
+                }
+            }
+        </script>
+    </body>
+    <!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+</html>
