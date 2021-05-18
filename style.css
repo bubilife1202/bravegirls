@@ -289,3 +289,8 @@ body {
     color: rgba(251, 176, 59, 1);
     font-size: 1.2rem;
 }
+
+.kakao_ad {
+    width: 320px;
+    margin: 0 auto;
+}
